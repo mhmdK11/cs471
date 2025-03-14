@@ -49,5 +49,4 @@ def search(request):
             if not contained and isAuthor and string in item['author'].lower():contained = True
             if contained: newBooks.append(item)
         return render(request, 'bookmodule/bookList.html', {'books':newBooks})
-def search(request):
     return render(request, 'bookmodule/search.html')

@@ -8,11 +8,9 @@
     <h1>Book List</h1>
     <ul>
     {% for book in books %}
-        <li>
-            <h2>{{ book.title }}</h2>
-            <p>Author: {{ book.author }}</p>
-            <p>ID: {{ book.id }}</p>
-        </li>
+        <p><b>Title: </b>{{ book.title }}</p>
+        <p><b>Author: </b> {{ book.author }}</p>
+        <p><b>ID: </b> {{ book.id }}</p>
     {% endfor %}
     </ul>
 {% endblock content %}
