@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block title %} Book list with edition less than or equal 3 and title or author doesn't contains co {% endblock title %}
+
+
+{% block content %}
+    <h1>Book list with edition greater than 3 and title or author contains co</h1>
+    <ul>
+        {% for obj in books %}
+        <p><b>ID:</b> {{obj.id}}, <b>Title:</b> {{obj.title}}, <b>Author:</b> {{obj.author}}, <b>Edition:</b> {{obj.edition}}</p>
+        <hr>
+        {% endfor %}
+    </ul>
+{% endblock content %}

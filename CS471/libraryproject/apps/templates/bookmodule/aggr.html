@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block title %} aggregation functions {% endblock title %}
+</head>
+<body>
+{% block content %}
+    <h1> aggregation functions </h1>
+    <h2>total count of all books: {{books.total_books}}</h2>
+    <h2>total price of all books: {{books.total_price}}</h2>
+    <h2>average price of all books: {{books.average_price|floatformat:2}}</h2>
+    <h2>maximum price of all books: {{books.maximum_price}}</h2>
+    <h2>minimumm price of all books: {{books.minimumm_price}}</h2>
+{% endblock content %}
+</body>
+</html>
