@@ -7,10 +7,9 @@
 {% block content %}
     <h1>Book List</h1>
     <ul>
-    {% for book in books %}
-        <p><b>Title: </b>{{ book.title }}</p>
-        <p><b>Author: </b> {{ book.author }}</p>
-        <p><b>ID: </b> {{ book.id }}</p>
-    {% endfor %}
+        {% for obj in books %}
+        <p><b>ID:</b> {{obj.id}}, <b>Title:</b> {{obj.title}}</p>
+        <hr>
+        {% endfor %}
     </ul>
 {% endblock content %}
